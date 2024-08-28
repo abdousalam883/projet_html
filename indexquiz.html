@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Quiz Title</title>
+  </head>
+  <body>
+    <h1>Quiz Title</h1>
+    <form action="post" id="quiz" name="quiz">
+      <p class="questions">Question 1</p>
+      <input type="radio" name="option1" id="mc" /> Option 1 <br />
+      <input type="radio" name="option2" id="mc" /> Option 2 <br />
+      <input type="radio" name="option3" id="mc" /> Option 3 <br />
+
+      <p class="questions">Question 2</p>
+      <input type="radio" name="option1" id="mc" /> Option 1 <br />
+      <input type="radio" name="option2" id="mc" /> Option 2 <br />
+      <input type="radio" name="option3" id="mc" /> Option 3 <br />
+
+      <p class="questions">Question 3</p>
+      <input type="radio" name="option1" id="mc" /> Option 1 <br />
+      <input type="radio" name="option2" id="mc" /> Option 2 <br />
+      <input type="radio" name="option3" id="mc" /> Option 3 <br />
+      <p>
+        <input id="button" type="button" value="Submit" onclick="check();" />
+      </p>
+    </form>
+    <div id="after_submit">
+      <p id="number_correct"></p>
+      <p id="message"></p>
+      <img id="picture" />
+    </div>
+  </body>
+</html>
